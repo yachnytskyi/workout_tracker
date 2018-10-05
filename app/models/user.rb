@@ -5,9 +5,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, request_keys: [:subdomain]
 
-  has_many :workouts, dependent: :destroy
 
   validates :email, uniqueness: true
+
+  has_many :workouts, dependent: :destroy
 
   def create_tenant
     Apartment::Tenant.create(subdomain)

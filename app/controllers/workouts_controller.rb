@@ -16,7 +16,7 @@ class WorkoutsController < ApplicationController
   # GET /workouts/new
   def new
     @workout = Workout.new
-    @work.exercises.build
+    @workout.exercises.build
     @workout.user_id = current_user.id
   end
 
@@ -72,6 +72,6 @@ class WorkoutsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def workout_params
-      params.require(:workout).permit(:title, :date, :exercises_attributes: [:id, :_destroy, :name, :sets, :weight])
+      params.require(:workout).permit(:title, :date, exercises_attributes: [:id, :_destroy, :name, :sets, :weight])
     end
 end

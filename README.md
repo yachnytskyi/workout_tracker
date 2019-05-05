@@ -13,27 +13,27 @@ INSTALLATION
 
 Please make sure the release file is unpacked under a Web-accessible directory. You shall see the following files and directories:
 
-app/
-bin/
-config/
-db/
-lib/
-log/
-public/
-storage/
-test/
-tmp/
-vendor/  
-.babelrc
-.gitignore
-.postcssrc.yml
-.ruby-version
-Gemfile
-Gemfile.lock
-README.md
-Rakefile
-config.ru
-package.json
+app/  
+bin/  
+config/  
+db/  
+lib/  
+log/  
+public/  
+storage/  
+test/  
+tmp/  
+vendor/    
+.babelrc  
+.gitignore  
+.postcssrc.yml  
+.ruby-version  
+Gemfile  
+Gemfile.lock  
+README.md  
+Rakefile  
+config.ru  
+package.json  
 yarn.lock
 
 REQUIREMENTS
